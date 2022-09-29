@@ -1,0 +1,82 @@
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-grey-1-opacity-5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-box {
+    width: 90%;
+    border-radius: var(--radius-2);
+    background-color: var(--fixed-white);
+    position: relative;
+}
+
+.container-modal {
+    width: 90%;
+}
+
+.modal-title {
+    margin: 24px auto;
+}
+
+.modal-form {
+    margin-top: 25px;
+}
+
+.modal-form > span {
+    color: var(--color-grey-1);
+    font-weight: 500;
+}
+
+.modal-form > input {
+    margin-top: 8px;
+    border: 1.5px solid var(--color-grey-3);
+    border-radius: var(--radius-2);
+    padding: 11.5px;
+    color: var(--color-grey-2);
+    margin-bottom: 25px;
+}
+.modal-form > input:focus {
+    outline-color: var(--color-brand-1);
+}
+
+.modal_cat_buttons > button {
+   padding: 7.5px;
+   margin-top: 16px;
+   gap: 12px;
+}
+
+.modal-last-buttons {
+    margin-top: 28px;
+    margin-bottom: 24px;
+}
+
+.modal-last-buttons > button {
+   width: 48%;
+}
+
+@media (min-width: 700px) {
+    .modal-box {
+        width: 30%;
+    }
+    .modal_cat_buttons{
+        flex-direction: row;
+        align-items: center;
+    }
+    .modal_cat_buttons > span {
+        padding: 7.5px;
+        margin-top: 16px;
+    }
+    .modal-last-buttons{
+        justify-content: end;
+    }
+    .modal-last-buttons > button {
+        width: 30%;
+     }
+}

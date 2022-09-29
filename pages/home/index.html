@@ -5,15 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Control Finance</title>
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon">
     <meta name="description" content="Control Finance - Seu controle financeiro">
-    <link rel="stylesheet" href="/styles/globalStyles.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../styles/globalStyles.css">
+    <link rel="stylesheet" href="../../styles/displays.css">
+    <link rel="stylesheet" href="../../styles/positions.css">
+    <link rel="stylesheet" href="../../styles/filterAreas.css">
+    <link rel="stylesheet" href="../../styles/cards.css">
+    <link rel="stylesheet" href="../../styles/modalForm.css">
+    <link rel="stylesheet" href="../../styles/navBar.css">
+    <link rel="stylesheet" href="../../styles/buttons.css">
+    <link rel="stylesheet" href="../../styles/texts.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <main id="app"></main>
-    <script src="/scripts/modal.js"></script>
-    <script src="valuesData.js"></script>
-    <script src="index.js"></script>
+    <header class="navBar flex jus-center al-center">
+        <div class="navBar-box container flex flex-col al-center jus-between">
+        <div class="logo-box">
+            <h1 class='logo-control'>Control <span class='logo-finance'>Finance</span></h1>
+        </div>
+        <button id='open_modal' class='navButton button bt-primary'>Registrar novo valor</button>
+    </div>
+    </header>
+    <main id="app" class="mainApp flex flex-col al-center">
+        <div class="container">
+        <div class='select-buttons flex flex-col al-start jus-between'>
+            <span class="title-2">Resumo Financeiro</span>
+            <div class="buttons-box flex jus-between">
+                <button id="cat_all" class="button bt-outline">Todos</button>
+                <button id="cat_appetizer" class="button bt-outline">Entradas</button>
+                <button id="cat_exits" class="button bt-outline">Saidas</button>
+            </div>
+        </div>
+        <div class="total-values flex al-center jus-between">
+            <span>Soma dos Valores</span>
+            <span id="total_values"></span>
+        </div>
+        <ul id="show_values" class="show-values flex flex-col"></ul>
+    </div>
+    </main>
+    <script src="../../scripts/modal.js"></script>
+    <script src="./valuesData.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+.pos-fixed {
+    position: fixed;
+}
+
+.pos-absolut {
+    position: absolute;
+}
+
+.pos-sticky {
+    position: sticky;
+}
+
+.pos-relative{
+    position: relative;
+}

@@ -1,1 +1,46 @@
-/* Desenvolva a estilização da sua página aqui */
+.mainApp{
+    width: 100%;
+}
+.select-buttons{
+    width: 261px;
+    height: 89px;
+    justify-self: center;
+}
+
+.buttons-box {
+    width: 100%;
+}
+
+.total-values {
+    margin-top: 28px;
+}
+
+.show-values{
+    margin-top: 28px;
+    gap: 20px;
+}
+
+.li-style {
+    border-radius: var(--radius-2);
+    border: 1.5px solid var(--color-grey-5);
+}
+
+.li-style:hover {
+    border: 1.5px solid var(--color-brand-1);
+} 
+
+.cat-button-box{
+    width: 128px;
+    padding: 7.5px;
+}
+
+.cat-box {
+    background-color: var(--color-grey-4);
+    width: 68px;
+    height: 26px;
+    font-size: 12px;
+    font-weight: 500px;
+    text-align: center;
+    text-justify: auto;
+    padding: 5.5px 11.5px;
+}

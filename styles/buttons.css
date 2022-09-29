@@ -1,0 +1,74 @@
+.button {
+    height: 2rem;
+    padding-inline: 0.875rem;
+}
+
+.bt-primary {
+    background-color: var(--color-brand-1);
+    color: var(--fixed-white);
+    border: 1.5px solid var(--color-brand-1);
+    border-radius: var(--radius-1);
+
+}.bt-primary:hover {
+    background-color: var(--color-brand-2);
+    border: 1.5px solid var(--color-brand-2);
+}
+
+.bt-greylow {
+    background-color: var(--color-grey-5);
+    color: var(--color-grey-2);
+    border: 1.5px solid var(--color-grey-5);
+    border-radius: var(--radius-1);
+}
+
+.bt-greylow:hover {
+    background-color: var(--color-grey-4);
+    color: var(--color-grey-1);
+    border: 1.5px solid var(--color-grey-4);
+}
+
+.bt-outline {
+    background-color: var(--color-grey-5);
+    color: var(--color-grey-2);
+    border: 1.5px solid var(--color-grey-5);
+    border-radius: var(--radius-1);
+}
+
+.bt-outline:hover {
+    color: var(--color-brand-1);
+    border: 1.5px solid var(--color-brand-1);
+}
+
+.bt-outline-active {
+    background-color: var(--color-grey-5);
+    color: var(--color-brand-1);
+    border: 1.5px solid var(--color-brand-1);
+    border-radius: var(--radius-1);
+}
+
+.bt-remove {
+    width: 28.5px;
+    padding: 6px;
+    border: 1.5px solid var(--color-grey-5);
+    border-radius: var(--radius-2);
+}
+
+.bt-remove > img {
+    border-style: none;
+    opacity: 50%;
+}
+
+.bt-remove > img:hover {
+    border-style: none;
+    opacity: 100%;
+}
+
+.button-close {
+    font-family: var(--font-family-2);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 4px 12px;
+    background-color: var(--color-grey-5);
+    border-style: none;
+}
+
