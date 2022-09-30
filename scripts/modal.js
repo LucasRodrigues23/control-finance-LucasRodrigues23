@@ -107,7 +107,6 @@ function buttonInsert(button, input, span) {
             newObj.id = insertedValues.length+1
             newObj.value = parseInt(input.value)
             newObj.categoryID = parseInt(span.id)
-            console.log('newObj :', newObj);
             insertedValues.push(newObj)
             ul.innerHTML =''
             renderValues(insertedValues)

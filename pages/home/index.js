@@ -1,17 +1,16 @@
-/* Desenvolva sua lógica aqui */
+/* Desenvolva sua lógica aqui */ 
 function renderValues(x) {
     let ul = document.getElementById('show_values')
     let spanValues = document.getElementById('total_values')
     let total = 0
+    let list = x
 
-    for (let i = 0; i < x.length; i++) {
-        
-        let element = x[i]
+    x.forEach((elem, i, arr) => {
+        let element = arr[i]
         let templateLi = renderValuesCreator(element)
         ul.appendChild(templateLi)
-        total += x[i].value
-    }
-    console.log('list', total);
+        total += arr[i].value
+    });
 
     spanValues.innerText = `R$${total.toFixed(2)}`
     
@@ -58,9 +57,9 @@ function renderValuesCreator(element) {
 
 function totalValues(list, total, span) {
 
-        for (let i = 0; i < list.length; i++){
-            total += list[i].value
-        }
+        list.forEach((elem, i, arr) => {
+            total += arr[i].value
+        })
         span.innerText = `R$${total.toFixed(2)}`
     
 }
@@ -103,13 +102,12 @@ function removeValue(button, id, array) {
 
     button.addEventListener('click', (event) => {
         event.preventDefault()
-        for (let i = 0; i < array.length; i++) {
-            if (array[i].id === id) {
-                array.splice(i , 1)
+
+        array.forEach((elem, i, arr) =>{
+            if (arr[i].id === id) {
+                arr.splice(i , 1)
                 ul.innerHTML =''
                 renderValues(array)
-            }
-        }
+        }})
     })
 }
-
